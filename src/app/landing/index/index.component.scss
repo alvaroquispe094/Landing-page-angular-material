@@ -2,7 +2,21 @@
   background: rgb(238, 244, 250);
 }
 
-mat-tile-tile{
+mat-grid-tile{
   background: none;
+  //padding-top: 600px!Important;
 }
 
+mat-grid-list{
+  background: none;
+  //margin-bottom: 15px;
+}
+
+.example-card {
+  margin: 15px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

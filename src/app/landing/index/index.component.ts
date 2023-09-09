@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
@@ -5,6 +6,13 @@ export interface PeriodicElement {
   position: number;
   weight: number;
   symbol: string;
+}
+
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  text: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -27,10 +35,35 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class IndexComponent implements OnInit {
 
+  tiles: Tile[] = [
+    {text: 'One', cols: 1, rows: 1, color: 'lightblue'},
+    {text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightblue'},
+    {text: 'Four', cols: 1, rows: 1, color: 'lightgreen'},
+  ];
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  public size: number = 2;
+
+  constructor(breakpointObserver: BreakpointObserver) {
+    breakpointObserver.observe([
+      Breakpoints.Small
+    ]).subscribe(result => {
+      this.size = 1;
+    });
+    breakpointObserver.observe([
+      Breakpoints.Medium
+    ]).subscribe(result => {
+      this.size = 2;
+    });
+    breakpointObserver.observe([
+      Breakpoints.Large
+    ]).subscribe(result => {
+      this.size = 4;
+    });
+  }
 
   ngOnInit(): void {
   }
