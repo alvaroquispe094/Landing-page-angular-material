@@ -13,13 +13,13 @@ export class NavigationComponent {
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
-      shareReplay()
+      //shareReplay()
     );
 
   isHandsetMatList$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
   .pipe(
     map(result => !result.matches),
-    shareReplay()
+    //shareReplay()
   );
     
   constructor(private breakpointObserver: BreakpointObserver) {}

@@ -10,9 +10,15 @@
   background: inherit;
 }
 
+.mat-toolbar{
+  background-color: #0a3c6b;
+}
+
 .mat-toolbar.mat-primary {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -22,6 +28,19 @@
 
 a{
   text-decoration: none;
-  padding: 0px 8px;
+  padding: 0px 18px;
   color: white;
 }
+
+a:hover{
+  opacity: 0.8;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+ }
+
