@@ -1,22 +1,20 @@
-<div>
-    <div class="grid mt-8">
-        <div class="ms:col-12 md:col-6 lg:col-6 xl:col-6 mt-5">
-            <div class="justify-content-center">
-                <mat-list class="justify-content-center">
-                    <div mat-subheader class="justify-content-center text-5xl">Alvaro Daniel Quispe</div>
-                    <div class="container-banner">
-                        <mat-list-item class="mb-5" *ngFor="let folder of folders">
-                            <mat-icon class="mr-5" matListItemIcon>{{folder.icon}}</mat-icon>
-                            <div matListItemTitle>{{folder.name}}</div>
-                            
-                        </mat-list-item>
-                    </div>
-                </mat-list>
-            </div>
-        </div>   
-        <div class="ms:col-12 md:col-6 lg:col-6 xl:col-6">
-            <img mat-card-image src="./assets/home_banner.svg" alt="Software Developer">
-        </div>   
-    </div>    
-</div>
 
+<div class="grid grid-nogutter mt-8">
+    <div class="col-12 ms:col-12 md:col-6 lg:col-6 xl:col-6 mt-5">
+        <mat-list class="justify-content-center">
+            <div mat-subheader class="container-banner" >Alvaro Daniel Quispe</div>
+            <div class="container-banner">
+                <mat-list-item class="mb-5" *ngFor="let folder of folders">
+                    <mat-icon class="" matListItemIcon>{{folder.icon}}</mat-icon>
+                    <div matListItemTitle>{{folder.name}}</div>
+                    
+                </mat-list-item>
+            </div>
+        </mat-list>
+    </div>   
+    <div class="col-12 ms:col-12 md:col-6 lg:col-6 xl:col-6" >
+        <mat-list class="justify-content-center">
+            <img mat-card-image src="./assets/home_banner.svg" alt="Software Developer" >
+        </mat-list>
+    </div>   
+</div>    
