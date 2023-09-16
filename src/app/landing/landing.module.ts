@@ -10,6 +10,8 @@ import { BannerComponent } from './banner/banner.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
     declarations: [
@@ -25,6 +27,9 @@ import { MatListModule } from '@angular/material/list';
         MatCardModule,
         MatDividerModule,
         MatListModule,
+        MatButtonModule,
+        MatListModule,
+        MatIconModule
     ]
 })
 export class LandingModule { }

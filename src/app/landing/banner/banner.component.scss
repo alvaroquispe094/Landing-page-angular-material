@@ -16,3 +16,18 @@
   .mat-grid-list{
     margin-top: 80px;
   }
+
+  .mat-mdc-list-item-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  mat-list {
+    text-align: center;
+  }
+
+  .container-banner {
+    padding-top: 30px;
+    max-width: 400px; 
+    margin-inline: auto;
+    align-content: center;
+  }
