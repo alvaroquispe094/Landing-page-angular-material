@@ -4,6 +4,7 @@
 
 .sidenav {
   width: 300px;
+  background-color: #0F1731!Important;
 }
 
 .sidenav .mat-toolbar {
@@ -44,3 +45,16 @@ a:hover{
   z-index: 2;
  }
 
+.bg-main{
+  background-color: #0F1731!Important;
+}
+
+mat-nav-list a{
+  text-decoration: none;
+  padding: 0px 18px;
+  color: white;
+}
+
+.color-white{
+  color: white;
+}
