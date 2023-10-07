@@ -12,12 +12,16 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
     declarations: [
         LandingComponent,
         IndexComponent,
         BannerComponent,
+        AboutComponent,
+        ExperienceComponent,
     ],
     imports: [
         CommonModule,
