@@ -14,6 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { SkillComponent } from './skill/skill.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -22,6 +25,9 @@ import { ExperienceComponent } from './experience/experience.component';
         BannerComponent,
         AboutComponent,
         ExperienceComponent,
+        SkillComponent,
+        PortfolioComponent,
+        ContactComponent,
     ],
     imports: [
         CommonModule,

@@ -1,0 +1,23 @@
+<mat-list>
+    <mat-list-item>
+        <span class="title-color headline-1"><h1>Skills</h1></span>
+    </mat-list-item>
+
+</mat-list>
+
+<div class="grid grid-nogutter">
+    <div class="col-6 sm:col-4 md:col-3 lg:col-3 xl:col-2" *ngFor="let skill of skills">
+      <mat-card style="text-align:center;" class="example-card justify-content-center">
+        <img class="mt-5" [src]="skill.image" alt="Photo of skill">
+        <mat-card-content class="mb-0 container" style="text-align:center;">
+            <mat-list>
+                <mat-list-item >
+                    <span class="title-color" matListItemTitle><h1 style="text-align:center;" class="mb-0">{{skill.name}}</h1></span>
+                </mat-list-item>
+
+            </mat-list>
+        </mat-card-content>
+        <br>
+      </mat-card>
+    </div>
+</div>    

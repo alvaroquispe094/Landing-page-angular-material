@@ -6,104 +6,29 @@
 </mat-list>
 
 <div class="grid grid-nogutter">
-    <div class="col-12  ms:col-12 md:col-6 lg:col-4 xl:col-4" container>
+    <div class="col-12  ms:col-12 md:col-6 lg:col-4 xl:col-4" *ngFor="let company of companies">
       <mat-card style="text-align:center;" class="example-card justify-content-center">
-        <img class="mt-5" src="./assets/geco.jpg" alt="Photo of a Shiba Inu">
+        <img class="mt-5" [src]="company.image" alt="Photo of a Shiba Inu">
         <mat-card-content>
             <mat-list>
                 <mat-list-item>
-                    <span class="title-color headline-1"><h1>About me</h1></span>
+                    <span class="title-color" matListItemTitle><h1 class="mb-1">{{company.companyName}}</h1></span>
                 </mat-list-item>
-                <br>
-                <mat-list-item style="height:auto" class="color-white">
-                    <div matListItemLine>Hello! I'm Alvaro Daniel Quispe</div>
+                
+                <mat-list-item style="height:auto" class="color-white align-start">
+                    <div matListItemTitle>{{company.position}}</div>
                 </mat-list-item>
-                <br>
-                <mat-list-item style="height:auto" class="color-white">
-                    <div matListItemLine>+4 year of experience working </div>
+                <mat-list-item style="height:auto" class="color-white mb-3 align-start">
+                    <div matListItemTitle>{{company.date}}</div>
                 </mat-list-item>
-                <br>
-                <mat-list-item style="height:auto" class="color-white">
-                    <div matListItemLine>I'm driven by the endless possibilities.</div>
-                </mat-list-item>
+
+                <mat-list-item style="height:auto" class="color-white-2 align-start" *ngFor="let line of company.lines" >
+                    <div matListItemLine>{{line}}</div>
+                </mat-list-item>   
+
             </mat-list>
         </mat-card-content>
         <br>
       </mat-card>
     </div>
-    <div class="col-12  ms:col-12 md:col-6 lg:col-4 xl:col-4" container>
-        <mat-card style="text-align:center;" class="example-card justify-content-center">
-          <img class="mt-5" src="./assets/geco.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-              <mat-list>
-                  <mat-list-item>
-                      <span class="title-color headline-1"><h1>About me</h1></span>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>Hello! I'm Alvaro Daniel Quispe</div>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>+4 year of experience working </div>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>I'm driven by the endless possibilities.</div>
-                  </mat-list-item>
-              </mat-list>
-          </mat-card-content>
-          <br>
-        </mat-card>
-      </div>
-      <div class="col-12  ms:col-12 md:col-6 lg:col-4 xl:col-4" container>
-        <mat-card style="text-align:center;" class="example-card justify-content-center">
-          <img class="mt-5" src="./assets/geco.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-              <mat-list>
-                  <mat-list-item>
-                      <span class="title-color headline-1"><h1>About me</h1></span>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>Hello! I'm Alvaro Daniel Quispe</div>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>+4 year of experience working </div>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>I'm driven by the endless possibilities.</div>
-                  </mat-list-item>
-              </mat-list>
-          </mat-card-content>
-          <br>
-        </mat-card>
-      </div>
-      <div class="col-12  ms:col-12 md:col-6 lg:col-4 xl:col-4" container>
-        <mat-card style="text-align:center;" class="example-card justify-content-center">
-          <img class="mt-5" src="./assets/geco.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-              <mat-list>
-                  <mat-list-item>
-                      <span class="title-color headline-1"><h1>About me</h1></span>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>Hello! I'm Alvaro Daniel Quispe</div>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>+4 year of experience working </div>
-                  </mat-list-item>
-                  <br>
-                  <mat-list-item style="height:auto" class="color-white">
-                      <div matListItemLine>I'm driven by the endless possibilities.</div>
-                  </mat-list-item>
-              </mat-list>
-          </mat-card-content>
-          <br>
-        </mat-card>
-      </div>
 </div>    

@@ -7,7 +7,7 @@ import { Section } from 'src/app/core/model/Section';
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss']
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent{
 
   public isMobile: boolean = false;
   folders: Section[] = [
@@ -39,10 +39,6 @@ export class BannerComponent implements OnInit {
     ]).subscribe(result => {
       this.isMobile = result.matches;
     });
-  }
-  
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 }
