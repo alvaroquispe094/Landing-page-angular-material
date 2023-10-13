@@ -1,6 +1,19 @@
-<mat-list>
+<mat-list id="portfolioSection">
     <mat-list-item>
         <span class="title-color headline-1"><h1>Portfolio</h1></span>
     </mat-list-item>
 
 </mat-list>
+
+<div class="container mt-3" #container>
+	<div class="left" *ngIf="totalPages > 1" (click)="currentPage != 1 && changePage(-1)" [ngClass]="{'disabled':currentPage === 1}"><mat-icon class="white-icon">keyboard_arrow_left</mat-icon></div>
+	<div class="cards" [ngClass]="{'w-100': totalPages === 1}">
+		<div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
+			<div class="card" *ngFor="let i of arr; let index = index" [ngStyle]="{'width': cardWidth}">
+				<span>{{i}}</span>
+			</div>
+		</div>
+	</div>
+	<div class="right" *ngIf="totalPages > 1" (click)="currentPage != totalPages && changePage(+1)"
+		[ngClass]="{'disabled':currentPage === totalPages}"><mat-icon class="white-icon">keyboard_arrow_right</mat-icon></div>
+</div>

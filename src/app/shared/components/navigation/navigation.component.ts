@@ -24,4 +24,8 @@ export class NavigationComponent {
     
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
 }
