@@ -25,7 +25,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       companyName: 'Conexia S.A.',
-      position: 'Programador Java Junior Advance',
+      position: 'Java Developer Junior Advance',
       date: '03/2019 - 07/2020',
       lines: ['- Mantenimiento y desarrollo de soluciones tecnológicas.', '- Desarrollo de mejoras para la Obras Sociales y Arts públicas y privadas.', '- Manejo y envió de datos a través de herramientas ETL.', '- manejo de bases de datos a través de postgresql.'],
       image: './assets/conexia.jpg'
